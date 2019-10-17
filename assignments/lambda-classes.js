@@ -34,12 +34,9 @@ class Student extends Person {
             this.favSubjects = attrStu.favSubjects
     }
     listsSubjects() {
-        console.log(jerry.map(favSubjects));
+        array.forEach(this.favSubjects)
     }
 }
-
-
-
 
 
 const brit = new Instructor({
@@ -49,15 +46,26 @@ const brit = new Instructor({
     favLanguage: 'JavaScript',
     specialty: 'Front-end',
     catchPhrase: `C-eh-N-eh-D-eh spells Canada!`
-  });
+});
 
-  const jerry = new Student({
+const jerry = new Student({
     name: 'Jerry',
     location: 'Houston',
     age: 19,
     previousBackground: 'Middle School Student',
     className: 'JS 102',
-    favSubjects: [english, math, programming]
-  });
+    favSubjects: ['english', 'math', 'programming']
+});
+
+const franklin = new Student({
+    name: 'Franklin',
+    location: 'Dallas',
+    age: 24,
+    previousBackground: 'WhatABurger Emp',
+    className: 'JS 101',
+    favSubjects: ['pottery', 'math', 'programming']
+});
+
 
   console.log(brit.demo('Javascript-IV'));
+  console.log(jerry.listsSubjects());
