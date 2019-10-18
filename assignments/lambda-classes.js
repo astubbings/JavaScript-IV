@@ -33,13 +33,16 @@ class Student extends Person {
             this.className = attrStu.className,
             this.favSubjects = attrStu.favSubjects
     }
+
     listsSubjects() {
         //return this.favSubjects;
         this.favSubjects.forEach (itemsInArray => console.log(itemsInArray));
     }
+
     PRAssignment(subject) {
         return `${this.name} has submitted a PR for ${subject}`;
     }
+    
     sprintChallenge(subject){
         return `${this.name} has begun sprint challenge on ${subject}`;
     }
